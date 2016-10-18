@@ -11,7 +11,7 @@ sys.dont_write_bytecode = True
 
 #-=============================================================================-
 
-lineEnd       = "\r\n" if sys.platform == "win32" else "\n"
+lineEnd       = os.linesep
 scriptName    = os.path.basename( sys.argv[0] ).split( '.' )[0]
 scriptVersion = 1.0
 
